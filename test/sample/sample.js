@@ -3,7 +3,7 @@
 "use strict";
 
 var fs = require("fs");
-var Crawler = require("../../../node-bauer-crawler");
+var Crawler = require("bauer-crawler");
 
 var crawler = new Crawler();
 
