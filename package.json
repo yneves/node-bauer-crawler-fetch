@@ -10,7 +10,7 @@
     "multi-process",
     "cluster",
     "crawler",
-    "scraper"
+    "fetch"
   ],
   "license": "MIT",
   "homepage": "https://github.com/yneves/node-bauer-crawler-fetch",

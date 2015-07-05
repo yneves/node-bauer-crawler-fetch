@@ -7,7 +7,7 @@ var assert = require("assert");
 
 // - -------------------------------------------------------------------- - //
 
-describe("Fetch",function() {
+describe("fetch",function() {
 
   it("require",function() {
     require(__dirname + "/../lib/promise.js");
