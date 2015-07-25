@@ -5,16 +5,38 @@
 var fs = require("fs");
 var Crawler = require("bauer-crawler");
 
-var crawler = new Crawler();
+var crawler = new Crawler({
+  config: {
+    fetch: {
+      cache: {
+        file: {
+          dir: __dirname
+        }
+      }
+    }
+  }
+});
 
-crawler.require(__dirname + "/../../");
+crawler.loadPlugin(__dirname + "/../../");
 
 crawler.ready(function() {
   
   this.promise()
-    .fetch("http://yneves.com/")
-    .then(function(val) {
-      fs.unlinkSync(val.file);
+    .fetch("http://httpbin.org/get?a=b")
+    .then(function(getFile) {
+      
+      return this.promise()
+        .fetch({
+          source: getFile,
+          request: {
+            method: "POST",
+            url: "http://httpbin.org/post"
+          }
+        })
+        .then(function(postFile) {
+          fs.unlinkSync(getFile);
+          fs.unlinkSync(postFile);
+        });
     })
     .exit();
   
