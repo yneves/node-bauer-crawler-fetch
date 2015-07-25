@@ -1,6 +1,6 @@
 {
   "name": "bauer-crawler-fetch",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Plugin for bauer-crawler to make http requests.",
   "keywords": [
     "multi-thread",
@@ -32,8 +32,7 @@
   "dependencies": {
     "bauer-cache": "^0.1.5",
     "bauer-crawler": "^0.1.7",
-    "bauer-factory": "^2.0.3",
-    "lodash": "^3.10.0",
+    "bauer-factory": "^2.0.4",
     "request": "^2.60.0"
   },
   "main": "lib/index.js"
