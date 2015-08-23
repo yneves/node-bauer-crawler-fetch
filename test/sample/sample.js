@@ -19,9 +19,9 @@ var crawler = new Crawler({
 
 crawler.loadPlugin(__dirname + "/../../");
 
-crawler.ready(function() {
+crawler.start(function() {
   
-  this.promise()
+  return this.promise()
     .fetch("http://httpbin.org/get?a=b")
     .then(function(getFile) {
       
@@ -37,10 +37,7 @@ crawler.ready(function() {
           fs.unlinkSync(getFile);
           fs.unlinkSync(postFile);
         });
-    })
-    .exit();
-  
-  
+    });
 });
 
 crawler.start();
