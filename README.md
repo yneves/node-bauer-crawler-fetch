@@ -1,11 +1,11 @@
-# bauer-crawler-fetch
+# bauer-plugin-plugin
 
-Plugin for `bauer-crawler` to make http requests.
+Plugin for `bauer` to make http requests.
 
 ## Installation
 
 ```
-npm install bauer-crawler-fetch
+npm install bauer-plugin-fetch
 ```
 
 ## Usage
