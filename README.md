@@ -55,7 +55,7 @@ module.exports = function(promise) {
     * `.fetch() :Promise`
     * `.fetch(url String) :Promise`
     * `.fetch(urls Array) :Promise`
-    * `.fetch(options object) :Promise`
+    * `.fetch(options Object) :Promise`
 
 ## License
 
