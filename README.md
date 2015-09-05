@@ -1,4 +1,4 @@
-# bauer-plugin-plugin
+# bauer-plugin-fetch
 
 Plugin for `bauer` to make http requests.
 

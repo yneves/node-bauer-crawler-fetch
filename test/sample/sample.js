@@ -21,11 +21,11 @@ crawler.loadPlugin(__dirname + "/../../");
 
 crawler.start(function() {
   
-  return this.promise()
+  return this.Promise
     .fetch("http://httpbin.org/get?a=b")
     .then(function(getFile) {
       
-      return this.promise()
+      return this.Promise
         .fetch({
           source: getFile,
           request: {
