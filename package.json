@@ -1,6 +1,6 @@
 {
   "name": "bauer-plugin-fetch",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Plugin for bauer to make http requests.",
   "keywords": [
     "multi-thread",
@@ -17,7 +17,7 @@
   "author": {
     "name": "Yuri Neves Silveira",
     "url": "http://yneves.com/",
-    "email": "npm@yneves.com"
+    "email": "yurinevessilveira@gmail.com"
   },
   "repository": {
     "type": "git",
@@ -27,13 +27,13 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "mocha": ">=1.0.0"
+    "mocha": "^2.3.4"
   },
   "dependencies": {
-    "bauer-cache": "*",
-    "bauer-crawler": "^0.2.2",
+    "bauer-cache": "^0.1.9",
+    "bauer-crawler": "^0.2.6",
     "bauer-factory": "*",
-    "request": "*"
+    "request": "^2.67.0"
   },
   "main": "lib/index.js"
 }
